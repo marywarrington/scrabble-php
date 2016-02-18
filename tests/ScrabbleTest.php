@@ -19,15 +19,14 @@
         {
             // Arrange
             $test_Scrabble = new Scrabble;
-            $input1 = "sjdkflsulskd";
-            $input2 = "lllpppnneesar";
+            $input1 = "a";
+            $input2 = "nn";
             // Act
             $result1 = $test_Scrabble->playScrabble($input1);
             $result2 = $test_Scrabble->playScrabble($input2);
             // Assert
             $this->assertEquals(1, $result1);
             $this->assertEquals(2, $result2);
-
         }
     }
  ?>
