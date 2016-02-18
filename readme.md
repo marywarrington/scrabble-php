@@ -25,7 +25,7 @@ _If you have any questions, concerns, or feedback, please contact the author thr
 
 ## Technologies Used
 
-_This web application was created using the_  [Silex micro-framework](http://silex.sensiolabs.org/)_, as well as _[Twig](http://twig.sensiolabs.org/)_, a template engine for php.
+_This web application was created using the_  [Silex micro-framework](http://silex.sensiolabs.org/)_, as well as_ [Twig](http://twig.sensiolabs.org/)_, a template engine for php.
 
 ### License
 
