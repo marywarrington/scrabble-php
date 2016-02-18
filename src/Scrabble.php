@@ -14,50 +14,22 @@
             if (preg_match('/[aeioulnrst]/i', $letter)) {
               $score = $score + 1;
             }
+            if (preg_match('/[dg]/i', $letter)) {
+              $score = $score + 2;
+            }
+            if (preg_match('/[bcmp]/i', $letter)) {
+              $score = $score + 3;
+            }
+            if (preg_match('/[fhvwy]/i', $letter)) {
+              $score = $score + 4;
+            }
+            if (preg_match('/[k]/i', $letter)) {
+              $score = $score + 5;
+            }
+            if (preg_match('/[qz]/i', $letter)) {
+              $score = $score + 10;
+            }
           }
-
-        // if (in_array('/[dg]/i', $lettersArray)) {
-        //   foreach ($lettersArray as $letter) {
-        //     if ($letter == '/[dg]/i') {
-        //       $score = $score + 2;
-        //     }
-        //   }
-        // }
-        // if (in_array('/[bcmp]/i', $lettersArray)) {
-        //   foreach ($lettersArray as $letter) {
-        //     if ($letter == '/[bcmp]/i') {
-        //       $score = $score + 3;
-        //     }
-        //   }
-        // }
-        // if (in_array('/[fhvwy]/i', $lettersArray)) {
-        //   foreach ($lettersArray as $letter) {
-        //     if ($letter == '/[fhvwy]/i') {
-        //       $score = $score + 4;
-        //     }
-        //   }
-        // }
-        // if (in_array('k', $lettersArray)) {
-        //   foreach ($lettersArray as $letter) {
-        //     if ($letter == 'k') {
-        //       $score = $score + 5;
-        //     }
-        //   }
-        // }
-        // if (in_array('/[jx]/i', $lettersArray)) {
-        //   foreach ($lettersArray as $letter) {
-        //     if ($letter == '/[jx]/i') {
-        //       $score = $score + 8;
-        //     }
-        //   }
-        // }
-        // if (in_array('/[qz]/i', $lettersArray)) {
-        //   foreach ($lettersArray as $letter) {
-        //     if ($letter == '/[qz]/i') {
-        //       $score = $score + 10;
-        //     }
-        //   }
-        // }
         return $score;
       }
   }

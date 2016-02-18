@@ -28,5 +28,19 @@
             $this->assertEquals(1, $result1);
             $this->assertEquals(2, $result2);
         }
+
+        function test_playScrabble_fullWords()
+        {
+            // Arrange
+            $test_Scrabble = new Scrabble;
+            $input1 = "zebra";
+            $input2 = "cheese";
+            // Act
+            $result1 = $test_Scrabble->playScrabble($input1);
+            $result2 = $test_Scrabble->playScrabble($input2);
+            // Assert
+            $this->assertEquals(16, $result1);
+            $this->assertEquals(11, $result2);
+        }
     }
  ?>
