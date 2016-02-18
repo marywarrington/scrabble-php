@@ -15,15 +15,19 @@
             $this->assertEquals(array('r','u','n','n','e','r'), $result);
         }
 
-        function test_playScrabble_findU()
+        function test_playScrabble_findOne()
         {
             // Arrange
             $test_Scrabble = new Scrabble;
-            $input = "runner";
+            $input1 = "sjdkflsulskd";
+            $input2 = "lllpppnneesar";
             // Act
-            $result = $test_Scrabble->playScrabble($input);
+            $result1 = $test_Scrabble->playScrabble($input1);
+            $result2 = $test_Scrabble->playScrabble($input2);
             // Assert
-            $this->assertEquals(1, $result);
+            $this->assertEquals(1, $result1);
+            $this->assertEquals(2, $result2);
+
         }
     }
  ?>
