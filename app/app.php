@@ -19,7 +19,9 @@
         $my_Scrabble = new Scrabble;
         $result = $my_Scrabble->playScrabble($_POST['input']);
         return $app['twig']->render('index.html.twig', array(
-            "form"=>true, "head"=>true, "message"=>array('type' => 'info', 'text' => $_POST['input'] . " is worth " . $result . " points.")
+            "form"=>true, "head"=>true, "message"=>array(
+                'type' => 'info',
+                'text' => $_POST['input'] . " is worth " . $result . " points.")
         ));
     });
 
